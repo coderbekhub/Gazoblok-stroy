@@ -437,6 +437,13 @@ ul {
               transform: scale(1.05);
             }
           }
+        }cursor: pointer;
+        transform: scale(1);
+        transition: all .5s ease-in-out;
+        &:hover {
+          &:hover {
+            transform: scale(1.1);
+          }
         }
 
         h2 {
@@ -512,6 +519,8 @@ ul {
   .aboutMeContent {
     display: flex;
     align-items: center;
+    background: #fff;
+    padding: 79px 64px 79px 64px;
     .aboutMeInfo {
       margin-right: 32px;
       img {
@@ -535,9 +544,57 @@ ul {
           transform: scale(1.1);
         }
       }
-      img {
-        
+    }
+  }
+}
+
+// contactSection START
+
+.contactSection {
+  background: #FFD12E;
+  padding: 80px 0;
+  .contactText {
+    text-align: center;
+    h2 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 52px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20.8px;
+      margin-bottom: 48px;
+    }
+  }
+
+  .contactContent {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    div {
+      label {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 6px;
       }
+
+      input {
+        width: 296;
+        height: 48;
+        border-radius: 12px;
+        border-width: 1px;
+        background: none;
+        padding: 14px 16px;
+      }
+    }
+
+    button {
+      display: none;
     }
   }
 }
