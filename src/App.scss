@@ -375,6 +375,7 @@ ul {
 // PRODUCT SECTION START
 
 .productSection {
+  margin-bottom: 127px;
   .productTextInfo {
     text-align: center;
     margin-bottom: 64px;
@@ -403,6 +404,7 @@ ul {
       justify-content: space-between;
       text-align: center;
       margin-bottom: 64px;
+      
       .productContentInfo {
         width: 400px;
         height: 500px;
@@ -426,6 +428,15 @@ ul {
         
         img {
           margin-bottom: 10px;
+
+          cursor: pointer;
+          transform: scale(1);
+          transition: all .5s ease-in-out;
+          &:hover {
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
         }
 
         h2 {
@@ -468,6 +479,64 @@ ul {
             color: #000;
           }
         }
+      }
+    }
+  }
+}
+
+// aboutSection Start
+
+.aboutMeSection {
+  background: #F6F5F7;
+  padding: 64px 0 64px 0;
+  .aboutMeText {
+    text-align: center;
+    margin-bottom: 64px;
+    h2 {
+      font-weight: 700;
+      font-size: 38.28px;
+      line-height: 52px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      width: 364px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .aboutMeContent {
+    display: flex;
+    align-items: center;
+    .aboutMeInfo {
+      margin-right: 32px;
+      img {
+        margin-bottom: 32px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        width: 604px;
+      }
+    }
+
+    .AboutMeBeton {
+      cursor: pointer;
+      transform: scale(1);
+      transition: all .5s ease-in-out;
+      &:hover {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      img {
+        
       }
     }
   }
